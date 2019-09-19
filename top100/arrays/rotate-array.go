@@ -12,7 +12,6 @@ func rotate(nums []int, k int)  {
 		newindex := (i + k) % len(nums)
 		rotated[newindex] = nums[i]
 	}
-	fmt.Println(nums)
 	nums = rotated
 	copy(nums, rotated)
 	fmt.Println(nums)
